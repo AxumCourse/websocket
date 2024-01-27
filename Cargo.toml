@@ -1,0 +1,23 @@
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+authors = ["axum.rs <team@axum.rs>"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/AxumCourse/websocket"
+homepage = "https://axum.rs"
+description = "axum.rs专题《Websocket》配套源码"
+
+[workspace.dependencies]
+futures = "0.3"
+tokio = { version = "1", features = ["full"] }
+axum = { version = "0.7", features = ["ws"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+tracing = "0.1"
+tracing-subscriber = "0.3"
+chrono = { version = "0.4", features = ["serde"] }
+xid = "1"
+
+[workspace]
+members = []
